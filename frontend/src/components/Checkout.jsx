@@ -13,7 +13,7 @@ function Checkout() {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
   const [courseData, setCourseData] = useState();
-  const [categories, setCategories] = useState();
+
   const { course_id } = useParams();
   const initialOptions = {
     clientId: PAYPAL_CLIENT_ID,
@@ -26,7 +26,6 @@ function Checkout() {
       .then((response) => {
         console.log(response.data);
         setCourseData(response.data);
-        setCategories(response.data.category);
       })
       .catch((error) => {
         console.log(error);

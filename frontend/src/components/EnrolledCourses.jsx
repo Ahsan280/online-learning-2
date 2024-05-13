@@ -3,7 +3,7 @@ import SideBar from "./SideBar";
 import { useContext, useState } from "react";
 import useAxios from "../utils/useAxios";
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+
 import { Link } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
 function EnrolledCourses() {

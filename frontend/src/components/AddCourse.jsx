@@ -1,7 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import useAxios from "../utils/useAxios";
-import AuthContext from "../context/AuthContext";
-import { useNavigate, Link } from "react-router-dom";
+
+import { useNavigate } from "react-router-dom";
 import SideBar from "./SideBar";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";

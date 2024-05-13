@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+
 import { useContext, useState } from "react";
 import useAxios from "../utils/useAxios";
 import { useEffect } from "react";
@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
 const swal = require("sweetalert2");
 function CourseDetails() {
-  const navigate = useNavigate();
   const api = useAxios();
   const { user } = useContext(AuthContext);
   const { course_id } = useParams();

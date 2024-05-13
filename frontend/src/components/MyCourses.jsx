@@ -1,16 +1,16 @@
 import React from "react";
 import SideBar from "./SideBar";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import useAxios from "../utils/useAxios";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+
 const Swal = require("sweetalert2");
 
 function MyCourses() {
   const api = useAxios();
-  const navigate = useNavigate();
+
   const { instructor_id } = useParams();
   const [myCourses, setMyCourses] = useState([]);
   const deleteCourse = (e, course_id) => {

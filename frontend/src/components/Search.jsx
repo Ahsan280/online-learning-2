@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 import { useParams } from "react-router-dom";
 import useAxios from "../utils/useAxios";
-const baseUrl = "http://127.0.0.1:8000/api/";
+
 function Search() {
   const [courses, setCourses] = useState([]);
   const { search } = useParams();

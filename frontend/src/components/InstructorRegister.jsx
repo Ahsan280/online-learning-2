@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useContext } from "react";
 import AuthContext from "../context/AuthContext";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useAxios from "../utils/useAxios";
 const swal = require("sweetalert2");
 function InstructorRegister() {
