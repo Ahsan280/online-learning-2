@@ -64,7 +64,6 @@ function Header() {
                   <button
                     className="nav-link dropdown-toggle"
                     id="navbarDropdown"
-                    role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
