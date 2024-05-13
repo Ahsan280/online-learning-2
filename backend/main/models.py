@@ -4,7 +4,11 @@ from moviepy.editor import VideoFileClip
 from django.db.models import Avg, Count
 
 # Create your models here.
-
+class Test(models.Model):
+    name=models.CharField(max_length=100)
+    def __str__(self):
+        return self.name
+    
 class Instructor(models.Model):
     user=models.OneToOneField(User, on_delete=models.CASCADE, related_name='user_instructor')
     full_name = models.CharField(max_length=100)
