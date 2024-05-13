@@ -19,7 +19,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# CORS_ALLOWED_ORIGINS = ['http://localhost:3000',]
+CORS_ALLOWED_ORIGINS = ['https://black-tree-0a6744300.5.azurestaticapps.net',]
 STORAGES = {
     'default':{
         'BACKEND':'django.core.files.storage.FileSystemStorage'
