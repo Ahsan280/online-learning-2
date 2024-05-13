@@ -14,7 +14,7 @@ function Login() {
     if (user) {
       navigate("/");
     }
-  }, []);
+  });
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);

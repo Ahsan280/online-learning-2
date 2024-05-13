@@ -28,7 +28,7 @@ function InstructorDetails() {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [instructor_id]);
   return (
     <div className="container my-4">
       <div className="row">

@@ -16,7 +16,7 @@ function Register() {
     if (user) {
       navigate("/");
     }
-  }, []);
+  });
   const handleRegister = async (e) => {
     e.preventDefault();
     setLoading(true);

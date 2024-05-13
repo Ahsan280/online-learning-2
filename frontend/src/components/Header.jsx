@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import AuthContext from "../context/AuthContext";
 import useAxios from "../utils/useAxios";
-import { useNavigate } from "react-router-dom";
+
 function Header() {
   const { user, logoutUser } = useContext(AuthContext);
   const [isInstructor, setIsInstructor] = useState(false);
   const [search, setSearch] = useState("");
   const api = useAxios();
-  const navigate = useNavigate();
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -28,7 +27,7 @@ function Header() {
     if (user != null) {
       alreadyInstructor();
     }
-  }, []);
+  });
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">

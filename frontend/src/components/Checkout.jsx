@@ -30,7 +30,7 @@ function Checkout() {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [course_id]);
   return (
     <div className="container my-5">
       <div className="row">

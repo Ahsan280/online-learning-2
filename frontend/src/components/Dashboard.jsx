@@ -59,7 +59,7 @@ function Dashboard() {
     };
     alreadyInstructor();
     GetProfileData();
-  }, []);
+  });
 
   return (
     <div className="container mt-4">
@@ -76,7 +76,11 @@ function Dashboard() {
                     <>
                       <p className="card-text">{instructor.description}</p>
                       <p className="card-text">{instructor.qualifications}</p>
-                      <img src={instructor.profile_picture} className="w-100" />
+                      <img
+                        src={instructor.profile_picture}
+                        className="w-100"
+                        alt="profile-picture"
+                      />
                     </>
                   ))}
                 </>
@@ -90,6 +94,7 @@ function Dashboard() {
                       src={userProfile.profile_picture}
                       className="w-100"
                       style={{ height: 300 }}
+                      alt="profile picture"
                     />
                   )}
                   {!userProfile.profile_picture && (

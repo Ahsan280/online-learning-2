@@ -29,6 +29,7 @@ function InstructorRegister() {
       const response = await api.post("main/create-instructor/", formData);
       setLoading(true);
       navigate("/");
+      console.log(response);
       swal.fire({
         title: "Congratulations! You Have Become An Instructor",
         icon: "success",
@@ -58,7 +59,7 @@ function InstructorRegister() {
       });
     };
     alreadyInstructor();
-  }, []);
+  });
   return (
     <div className="container mt-4">
       <div className="row">

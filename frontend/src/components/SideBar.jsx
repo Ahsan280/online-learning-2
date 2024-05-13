@@ -25,7 +25,7 @@ function SideBar() {
       });
     };
     alreadyInstructor();
-  }, []);
+  });
 
   return (
     <div className="col-md-4">

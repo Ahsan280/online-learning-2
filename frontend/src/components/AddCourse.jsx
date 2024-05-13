@@ -10,7 +10,7 @@ function AddCourse() {
   const api = useAxios();
   const navigate = useNavigate();
   const { instructor_id } = useParams();
-  const [id, setId] = useState(instructor_id);
+
   const [categories, setCategories] = useState([]);
   const [checkedState, setCheckedState] = useState(
     new Array(categories.length).fill(false)
@@ -26,7 +26,7 @@ function AddCourse() {
     setLoading(true);
     const formData = new FormData();
     formData.append("name", courseName);
-    formData.append("Instructor", id);
+    formData.append("Instructor", instructor_id);
     formData.append("price", price);
     formData.append("description", description);
     formData.append("image", image);
@@ -89,7 +89,7 @@ function AddCourse() {
       }
     };
     GetAllCategories();
-  }, []);
+  });
   return (
     <div className="container mt-4">
       <div className="row">

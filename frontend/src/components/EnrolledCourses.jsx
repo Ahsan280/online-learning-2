@@ -14,7 +14,7 @@ function EnrolledCourses() {
     api.get(`main/enrolled_courses/${user.user_id}/`).then((response) => {
       setEnrolledCourses(response.data);
     });
-  }, []);
+  });
   return (
     <div className="container mt-4">
       <div className="row">

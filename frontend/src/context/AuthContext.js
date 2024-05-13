@@ -73,6 +73,7 @@ export const AuthProvider = ({ children }) => {
       body: JSON.stringify({ full_name, password, password2, email, username }),
     });
     const data = await response.json();
+    console.log(data);
     if (response.status === 201) {
       navigate("/login");
       swal.fire({
@@ -126,7 +127,7 @@ export const AuthProvider = ({ children }) => {
       setUser(jwtDecode(authTokens.access));
     }
     setLoading(false);
-  }, []);
+  }, [authTokens]);
   return (
     <AuthContext.Provider value={contextData}>
       {loading ? null : children}

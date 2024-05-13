@@ -14,7 +14,7 @@ function Search() {
     api.get(`main/searched-courses/${search}/`).then((response) => {
       setCourses(response.data);
     });
-  }, []);
+  }, [search]);
   return (
     <div className="container">
       <div className="row ">
