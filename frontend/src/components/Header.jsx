@@ -31,9 +31,9 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link to="/" className="navbar-brand">
           Online Learning Platform
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -61,16 +61,15 @@ function Header() {
                   </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <button
                     className="nav-link dropdown-toggle"
-                    href="#"
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     {user.full_name}
-                  </a>
+                  </button>
                   <ul
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"

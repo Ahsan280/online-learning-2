@@ -164,7 +164,7 @@ function CourseDetails() {
       .catch((error) => {
         console.log(error);
       });
-  }, [user, course_id]);
+  }, [user, course_id, api]);
 
   return (
     <div className="container mt-4">

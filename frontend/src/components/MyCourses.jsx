@@ -51,7 +51,7 @@ function MyCourses() {
         setMyCourses(response.data);
       });
     } catch (error) {}
-  }, [instructor_id]);
+  }, [instructor_id, api]);
   return (
     <div className="container mt-4">
       <div className="row">

@@ -79,7 +79,7 @@ function Dashboard() {
                       <img
                         src={instructor.profile_picture}
                         className="w-100"
-                        alt="profile-picture"
+                        alt="profile"
                       />
                     </>
                   ))}
@@ -94,7 +94,7 @@ function Dashboard() {
                       src={userProfile.profile_picture}
                       className="w-100"
                       style={{ height: 300 }}
-                      alt="profile picture"
+                      alt="profile"
                     />
                   )}
                   {!userProfile.profile_picture && (
