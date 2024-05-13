@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   const loginUser = async (email, password) => {
-    let url = `http://127.0.0.1:8000/api/token/`;
+    let url = `https://online-learning-backend.azurewebsites.net/api/token/`;
     const response = await fetch(url, {
       method: "POST",
       body: JSON.stringify({ email, password }),
@@ -64,7 +64,7 @@ export const AuthProvider = ({ children }) => {
     email,
     username
   ) => {
-    let url = "http://127.0.0.1:8000/api/register/";
+    let url = "https://online-learning-backend.azurewebsites.net/api/register/";
     const response = await fetch(url, {
       method: "POST",
       headers: {

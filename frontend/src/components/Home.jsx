@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-const baseUrl = "http://127.0.0.1:8000/api/";
+const baseUrl = "https://online-learning-backend.azurewebsites.net/api/";
 function Home() {
   const [courses, setCourses] = useState([]);
   const [popularCourses, setPopularCourses] = useState([]);
